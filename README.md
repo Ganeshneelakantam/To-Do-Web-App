@@ -28,7 +28,7 @@ Include a link to a live demo of your app if available.
 
 ## Usage
 
-1. Clone the repository:
+1. Clone the repository: https://github.com/Ganeshneelakantam/To-Do-Web-App.git
 
 2. Open the `index.html` file in your web browser.
 
@@ -53,6 +53,6 @@ Give credit to any resources, tutorials, or third-party libraries you used in yo
 
 Specify the license for your project. For example:
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [License](LICENSE).
 
 
