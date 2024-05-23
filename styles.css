@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    /* background: linear-gradient(to right, #ece9e6, #ffffff); */
+    background-image: url("https://www.shutterstock.com/shutterstock/videos/1108494155/thumb/1.jpg?ip=x480");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #181818;
+}
+
+.container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    opacity: 0.88;
+}
+
+.container {
+    /* Existing styles */
+    /* Add the following styles */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    /* Existing styles */
+    /* Add the following styles */
+    max-width: 600px; /* Adjust this width as needed */
+    width: 100%;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007bff;
+}
+
+form button {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Task List Styles */
+.task-lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.task-section {
+    flex: 1;
+    background: #f7f7f7;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-section h2 {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.task-list li:hover {
+    background-color: #f1f1f1;
+}
+
+.completed .task-content {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.task-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-content strong {
+    font-size: 1.1em;
+}
+
+.task-list button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-list button.delete {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.task-list button.delete:hover {
+    background-color: #c9302c;
+}
+
+.task-list button.complete {
+    background-color: #5bc0de;
+    color: #fff;
+}
+
+.task-list button.complete:hover {
+    background-color: #31b0d5;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .task-lists {
+        flex-direction: column;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .task-section {
+        width: 100%;
+    }
+}
